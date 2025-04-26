@@ -1,45 +1,171 @@
-/* remove thic comment to add @import font or CSS variables at the top of this file */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  min-width: 1000px;
-  max-width: 1400px;
+	margin: 0 auto;
+	min-width: 1000px;
+	max-width: 1400px;
 }
 
 /* Layout */
 
 section {
-  float: left;
-  width: 50%;
+	float: left;
+	width: 50%;
 }
 
 aside {
-  float: left;
-  width: 30%;
+	float: left;
+	width: 30%;
 }
 
 nav {
-  float: left;
-  width: 20%;
+	float: left;
+	width: 20%;
 }
 
 footer {
-  clear: both;
+	clear: both;
 }
 
-header, section, aside, nav, footer {
-  padding: 20px;
+header,
+section,
+aside,
+nav,
+footer {
+	padding: 20px;
 }
 
 /* header and footer */
 
-header, footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
+header,
+footer {
+	border-top: 5px solid #a66;
+	border-bottom: 5px solid #a66;
 }
 
 /* WRITE YOUR styling/typesetting CSS code BELOW HERE */
+header {
+	font-family: "Cal Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.15rem;
+}
 
+h2 {
+	font-size: 1.5rem;
+	letter-spacing: 0.15rem;
+
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-size: 0.625rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.07rem;
+	word-spacing: 0.07rem;
+}
+
+section>h2+p {
+	text-indent: 1.25rem;
+}
+
+a {
+	color: #a66;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #822;
+}
+
+a:hover,
+a:focus {
+	color: #c88;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: none;
+}
+
+a:active {
+	background-color: #a66;
+	color: #fff;
+	border-radius: 0.25em;
+	padding: 0.1em 0.2em;
+}
+
+a[href^="http"]::after {
+	content: "";
+	display: inline-block;
+	width: 0.75rem;
+	height: 0.75rem;
+	margin-left: 0.25rem;
+	background: url('external-link-52.png') no-repeat center/contain;
+}
+
+p,
+ul,
+ol {
+	margin: 1.5rem 0;
+}
+
+ul,
+ol {
+	padding-left: 1.5rem;
+}
+
+li {
+	line-height: 1.5rem;
+}
+
+nav {
+	padding: 0;
+	margin-top: 1.5rem;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+}
+
+nav a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0;
+	width: 12rem;
+	height: 4rem;
+	font-size: 1.5rem;
+	border: 2px solid #a66;
+	text-decoration: none;
+	color: #a66;
+	border-radius: 0.25rem;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+nav a:hover,
+nav a:focus {
+	background-color: #a66;
+	color: #fff;
+}
+
+ul {
+	list-style: disc outside;
+}
+
+li::marker {
+	color: #a66;
+	font-size: 1rem;
+}
